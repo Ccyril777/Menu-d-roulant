@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu déroulant
+    </title>
+    <script> var __basePath = ''; </script>
+    <script src="../Menu Déroulant/js/jsuite/jsuites.js"></script>
+    <link rel="stylesheet" href="../Menu Déroulant/js/jsuite/jsuites.css" type="text/css" />
+</head>
+
+<style>
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
+    html {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        overflow: auto;
+    }
+    body {
+        padding: 1rem;
+        overflow: auto;
+    }
+</style>
+    <script src="../Menu Déroulant/js/aggrid/ag-grid-enterprise.min.js"></script></head>
+
+<body>
+
+    <input
+    type="text"
+    oninput="onQuickFilterChanged()"
+    id="quickFilter"
+    placeholder="Recherche..."
+    />
+
+    <button id='addRow' >Ajouter une ligne</button>
+
+    <div id="myGrid" style="width: 150rem; height: 50rem;" class="ag-theme-balham"></div>
+
+    <!-- <div class="test-header">
+        Observation et description :
+        <span id="selectedRows"></span>
+    </div> -->
+    <script src="main.js"></script>
+
+</body>
+</html>
